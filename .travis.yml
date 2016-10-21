@@ -1,0 +1,12 @@
+sudo: required
+
+services:
+  - docker
+
+language: go
+
+deploy:
+  provider: gae
+  project: hellogo
+  keyfile: gce.json
+  on: master
