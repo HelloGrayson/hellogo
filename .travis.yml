@@ -6,11 +6,10 @@ services:
 language: go
 
 before_install:
-  - openssl aes-256-cbc -K $encrypted_7748a1005700_key -iv $encrypted_7748a1005700_iv
-    -in gce.json.enc -out gce.json -d
+  - openssl aes-256-cbc -K $encrypted_7748a1005700_key -iv $encrypted_7748a1005700_iv -in gce-deploy.json.enc -out gce-deploy.json -d
 
 deploy:
   provider: gae
-  keyfile: gce.json
+  keyfile: gce-deploy.json
   project: hellogo
   on: master
