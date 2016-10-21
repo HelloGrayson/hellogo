@@ -7,6 +7,7 @@ language: go
 
 before_install:
   - openssl aes-256-cbc -K $encrypted_7748a1005700_key -iv $encrypted_7748a1005700_iv -in gce-deploy.json.enc -out gce-deploy.json -d
+  - cat gce-deploy.json
 
 deploy:
   provider: gae
