@@ -14,3 +14,4 @@ deploy:
   keyfile: gce.json
   project: hellogo
   on: master
+  verbosity: debug
