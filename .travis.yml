@@ -12,6 +12,6 @@ before_install:
 deploy:
   provider: gae
   keyfile: gce.json
-  project: hellogo
+  project: hellogo-147901
   on: master
   verbosity: debug
